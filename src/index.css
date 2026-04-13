@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-neon-blue: #00f2ff;
+  --color-neon-green: #39ff14;
+  --color-glass: rgba(255, 255, 255, 0.1);
+  --color-glass-dark: rgba(0, 0, 0, 0.2);
+  --color-apple-gray: #86868B;
+  --color-apple-bg: #F5F5F7;
+}
+
+@layer base {
+  body {
+    @apply antialiased transition-colors duration-300;
+    min-height: 100vh;
+  }
+
+  body.light {
+    @apply bg-[#F5F5F7] text-[#1D1D1F];
+    background: radial-gradient(circle at top right, #ffffff, #F5F5F7);
+  }
+
+  body.dark {
+    @apply bg-[#0f172a] text-white;
+    background: radial-gradient(circle at top right, #1e293b, #0f172a);
+  }
+
+  @keyframes wave {
+    0% { transform: translateX(-50%) skewY(0deg); }
+    50% { transform: translateX(-25%) skewY(5deg); }
+    100% { transform: translateX(0%) skewY(0deg); }
+  }
+
+  .animate-wave {
+    animation: wave 2s infinite linear;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply backdrop-blur-md border border-white/10 bg-white/5 shadow-xl;
+  }
+
+  .soft-glass {
+    @apply bg-white/70 backdrop-blur-[20px] border border-white/40 shadow-[0_8px_32px_rgba(0,0,0,0.05)];
+  }
+  
+  .neon-border-blue {
+    box-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
+  }
+  
+  .neon-text-blue {
+    text-shadow: 0 0 8px rgba(0, 242, 255, 0.5);
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

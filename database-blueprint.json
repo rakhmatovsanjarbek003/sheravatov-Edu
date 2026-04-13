@@ -1,0 +1,27 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "Platform user profile and progress",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "format": "uuid" },
+        "username": { "type": "string" },
+        "level": { "type": "integer" },
+        "streak": { "type": "integer" }
+      },
+      "required": ["id", "username"]
+    },
+    "QuizResult": {
+      "title": "Quiz Result",
+      "description": "History of completed quizzes",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "quizId": { "type": "string" },
+        "score": { "type": "integer" },
+        "completedAt": { "type": "string", "format": "date-time" }
+      }
+    }
+  }
+}

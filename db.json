@@ -1,0 +1,85 @@
+{
+  "users": [],
+  "mentors": [
+    {
+      "id": "1",
+      "name": "Jasur Ustoz",
+      "field": "Python",
+      "status": "Pending",
+      "date": "12 Apr"
+    },
+    {
+      "id": "2",
+      "name": "Malika Karimova",
+      "field": "English",
+      "status": "Reviewing",
+      "date": "11 Apr"
+    },
+    {
+      "id": "3",
+      "name": "Zafar Aliyev",
+      "field": "Math",
+      "status": "Pending",
+      "date": "10 Apr"
+    }
+  ],
+  "stats": {
+    "totalRevenue": 12450,
+    "activeUsers": 42800,
+    "retentionRate": 68,
+    "aiAccuracy": 94.2
+  },
+  "officialQuizzes": [
+    {
+      "id": "m1",
+      "title": "Algebra Basics",
+      "category": "math",
+      "questionsCount": 10,
+      "icon": "📐",
+      "timeAgo": "2h ago",
+      "score": "8/10"
+    },
+    {
+      "id": "p1",
+      "title": "Python Basics",
+      "category": "programming",
+      "questionsCount": 10,
+      "icon": "🐍",
+      "timeAgo": "5h ago",
+      "score": "9/10"
+    },
+    {
+      "id": "s1",
+      "title": "Chemical Bonds",
+      "category": "chemistry",
+      "questionsCount": 10,
+      "icon": "🧪",
+      "timeAgo": "1d ago"
+    },
+    {
+      "id": "h1",
+      "title": "Ancient Rome",
+      "category": "history",
+      "questionsCount": 15,
+      "icon": "🏛️",
+      "timeAgo": "2d ago"
+    },
+    {
+      "id": "e1",
+      "title": "Grammar 101",
+      "category": "english",
+      "questionsCount": 20,
+      "icon": "📝",
+      "timeAgo": "3d ago"
+    },
+    {
+      "id": "b1",
+      "title": "Human Anatomy",
+      "category": "biology",
+      "questionsCount": 30,
+      "icon": "🧬",
+      "timeAgo": "4d ago"
+    }
+  ],
+  "userQuizzes": []
+}
